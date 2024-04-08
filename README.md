@@ -24,6 +24,8 @@ To use the `cron_parser`, navigate to the directory containing the script and ru
 
 ```sh
 python cron_parser.py "<cron_string>"
+or
+python3 cron_parser.py "<cron_string>"
 ```
 
 ### Examples
@@ -32,6 +34,8 @@ Here’s a quick example to try:
 
 ```sh
 python cron_parser.py "*/15 0 1,15 * 1-5 /usr/bin/find"
+or
+python3 cron_parser.py "*/15 0 1,15 * 1-5 /usr/bin/find"
 ```
 
 **Expected Output:**
@@ -54,6 +58,8 @@ Invalid cron strings will prompt an error message explaining the issue. Ensure y
 Execute the included test suite with the following command, ensuring you're in the project directory:
 
 ```sh
+python -m unittest test_cron_parser.py
+or
 python -m unittest test_cron_parser.py
 ```
 
